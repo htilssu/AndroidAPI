@@ -30,8 +30,8 @@ CREATE TABLE Product
 
 CREATE TABLE Customer
 (
-    UserName    VARCHAR(24)  NOT NULL PRIMARY KEY,
-    Password    VARCHAR(64)  NOT NULL,
+    UserName    VARCHAR(24)   NOT NULL PRIMARY KEY,
+    Password    VARCHAR(64)   NOT NULL,
     FirstName   NVARCHAR(25)  NOT NULL,
     LastName    NVARCHAR(25)  NOT NULL,
     Email       VARCHAR(50)   NOT NULL,
@@ -47,7 +47,7 @@ CREATE TABLE Customer
 CREATE TABLE Invoice
 (
     Id         INT            NOT NULL PRIMARY KEY IDENTITY (1,1),
-    Customer VARCHAR(24)   NOT NULL FOREIGN KEY REFERENCES Customer (UserName),
+    Customer   VARCHAR(24)    NOT NULL FOREIGN KEY REFERENCES Customer (UserName),
     OrderDate  DATE           NOT NULL,
     TotalPrice DECIMAL(18, 2) NOT NULL,
 )
