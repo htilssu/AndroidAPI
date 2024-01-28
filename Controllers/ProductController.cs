@@ -18,10 +18,7 @@ public class ProductController : Controller
         {
             //TODO return all products
         }
-
-        Response.ContentType = "application/json";
-        Response.SetCookie(new HttpCookie("cookie", Guid.NewGuid().ToString()));
-        Response.StatusCode = (int)HttpStatusCode.OK;
+        
         //TODO collect product by id
         return Json(new { id = 123, name = "product1" }, JsonRequestBehavior.AllowGet);
     }
