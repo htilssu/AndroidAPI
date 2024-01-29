@@ -12,7 +12,7 @@ public class ProductController : Controller
     {
         if (id == null)
         {
-            //TODO return all products
+            //TODO return all products limit 50 items
         }
 
         //TODO collect product by id

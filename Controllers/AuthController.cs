@@ -16,6 +16,7 @@ public class AuthController : Controller
         }
 
         //TODO handle information from client
+        // Session["username"] = username;
         return null;
     }
 }
