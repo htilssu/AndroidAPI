@@ -3,6 +3,7 @@ using System.Web.Mvc;
 
 namespace ShoppingWEBTraining.Controllers;
 
+[Route("api/[controller]")]
 public class AuthController : Controller
 {
     [HttpPost]

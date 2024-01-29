@@ -1,13 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Web;
+﻿using System.Net;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 
 namespace ShoppingWEBTraining.Controllers;
 
+[Route("api/[controller]")]
 public class ProductController : Controller
 {
     [HttpGet]
@@ -18,7 +14,7 @@ public class ProductController : Controller
         {
             //TODO return all products
         }
-        
+
         //TODO collect product by id
         return Json(new { id = 123, name = "product1" }, JsonRequestBehavior.AllowGet);
     }
